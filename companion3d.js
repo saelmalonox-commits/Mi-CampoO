@@ -8,6 +8,7 @@
   let active = null;
 
   const modelUrl = './assets/character/axoflutter_companion.glb';
+  const worldLights={cosmos:[0xff65d8,0x60efff],aurora:[0xff83e6,0x5fffe0],ocean:[0x5f8dff,0x48f2ff],forest:[0x80f097,0x55d9c2],solar:[0xffa64f,0xffe17a],lunar:[0x9b83ff,0x93c8ff]};
 
   async function ensureThree(){
     if(THREE && GLTFLoader) return true;
@@ -63,8 +64,9 @@
     const camera = new THREE.PerspectiveCamera(kind==='home'?34:38, rect.width/rect.height, .05, 100);
     scene.add(new THREE.HemisphereLight(0xbcefff,0x190b2f,kind==='home'?2.8:2.2));
     const key = new THREE.DirectionalLight(0xffffff,2.8); key.position.set(-2.5,-3.5,5); scene.add(key);
-    const pink = new THREE.PointLight(0xff65d8,kind==='home'?15:9,7,2); pink.position.set(2.6,1.3,2.8); scene.add(pink);
-    const cyan = new THREE.PointLight(0x60efff,kind==='home'?13:8,7,2); cyan.position.set(-2.1,-1.6,1.6); scene.add(cyan);
+    const colors=worldLights[settings.visualWorld]||worldLights.cosmos;
+    const pink = new THREE.PointLight(colors[0],kind==='home'?15:9,7,2); pink.position.set(2.6,1.3,2.8); scene.add(pink);
+    const cyan = new THREE.PointLight(colors[1],kind==='home'?13:8,7,2); cyan.position.set(-2.1,-1.6,1.6); scene.add(cyan);
 
     const model = modelSource.clone(true);
     scene.add(model);
@@ -75,16 +77,17 @@
     const center = box.getCenter(new THREE.Vector3());
     model.position.sub(center);
     const largest = Math.max(size.x,size.y,size.z);
-    const scale = (kind==='home'?2.6:1.8)/largest;
+    const scale = (kind==='home'?3.25:1.8)/largest;
     model.scale.setScalar(scale);
     model.rotation.x = Math.PI/2 * .04;
     model.rotation.z = kind==='home' ? -.08 : 0;
-    camera.position.set(0,-(kind==='home'?6.2:6.8),kind==='home'?1.25:1.1);
+    camera.position.set(0,-(kind==='home'?5.55:6.8),kind==='home'?1.18:1.1);
     camera.lookAt(0,0,.55);
 
     let visible = true;
     const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches || settings.animations===false;
     const presence = settings.companionPresence || 'normal';
+    const motionStyle=settings.motionStyle||'orbit';
     const amp = presence==='discreet' ? .018 : presence==='present' ? .055 : .035;
     const start=performance.now();
     const state={container,renderer,scene,camera,model,baseScale:scale,raf:0,observer:null,mode:'idle'};
@@ -104,10 +107,14 @@
         const mode=state.mode||'idle';
         const speed=mode==='observing'?.45:mode==='listening'?.65:mode==='celebrate'?1.55:1.0;
         const amount=mode==='pause'?amp*.25:mode==='observing'?amp*.38:mode==='celebrate'?amp*1.55:amp;
-        model.position.z=Math.sin(t*1.1*speed)*amount+(mode==='celebrate'?Math.max(0,Math.sin(t*1.55))*.03:0);
-        model.rotation.z=(kind==='home'?-.08:0)+Math.sin(t*.62*speed)*amount*.8;
-        model.rotation.y=Math.sin(t*.48*speed)*amount*1.6+(mode==='guiding'?.05:0);
-        const pulse=mode==='listening'?1+Math.sin(t*.8)*.008:mode==='celebrate'?1+Math.sin(t*1.8)*.018:1;
+        const mSpeed=motionStyle==='pulse'?1.35:motionStyle==='tide'?.72:motionStyle==='breathe'?.55:motionStyle==='drift'?.82:motionStyle==='still'?.12:1;
+        const mAmount=motionStyle==='still'?.16:motionStyle==='breathe'?.62:motionStyle==='tide'?.8:1;
+        model.position.z=Math.sin(t*1.1*speed*mSpeed)*amount*mAmount+(mode==='celebrate'?Math.max(0,Math.sin(t*1.55))*.03:0);
+        model.position.x=motionStyle==='drift'?Math.sin(t*.32)*amount*.7:0;
+        model.rotation.z=(kind==='home'?-.08:0)+Math.sin(t*.62*speed*mSpeed)*amount*.8*mAmount;
+        model.rotation.y=Math.sin(t*.48*speed*mSpeed)*amount*1.6*mAmount+(mode==='guiding'?.05:0);
+        const worldPulse=motionStyle==='pulse'?1+Math.sin(t*1.45)*.014:motionStyle==='breathe'?1+Math.sin(t*.42)*.012:1;
+        const pulse=(mode==='listening'?1+Math.sin(t*.8)*.008:mode==='celebrate'?1+Math.sin(t*1.8)*.018:1)*worldPulse;
         model.scale.setScalar(state.baseScale*pulse);
         pink.intensity=(kind==='home'?15:9)*(mode==='guiding'?1.18:mode==='celebrate'?1.35:mode==='pause'?.65:1);
         cyan.intensity=(kind==='home'?13:8)*(mode==='listening'?1.18:mode==='celebrate'?1.28:mode==='pause'?.65:1);
@@ -129,8 +136,9 @@
     const container = route==='home' ? document.getElementById('companion3d-home') : document.getElementById('companion3d-session');
     if(!container){destroy();return}
     const mode=route==='home'?'idle':({opening:'guiding',placement:'guiding',observation:'listening',movement:'observing',phrase:'guiding',closing:'pause',integration:'celebrate'}[session?.stage]||'idle');
+    const effective={...settings,visualWorld:(route==='home'?settings.visualWorld:(session?.visualWorld||settings.visualWorld)),motionStyle:(route==='home'?settings.motionStyle:(session?.motionStyle||settings.motionStyle))};
     if(active?.container===container){active.mode=mode;return}
-    mount(container,route==='home'?'home':'session',settings).then(()=>{if(active)active.mode=mode});
+    mount(container,route==='home'?'home':'session',effective).then(()=>{if(active)active.mode=mode});
   }
 
   window.CampoCompanion3D={sync,destroy};

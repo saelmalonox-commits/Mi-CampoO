@@ -1,4 +1,4 @@
-const VERSION = 'v6-vercel-1';
+const VERSION = 'v6.3-mundos-vivos-1';
 const SHELL_CACHE = `mi-campo-shell-${VERSION}`;
 const RUNTIME_CACHE = `mi-campo-runtime-${VERSION}`;
 const APP_CACHE_PREFIX = 'mi-campo-';
