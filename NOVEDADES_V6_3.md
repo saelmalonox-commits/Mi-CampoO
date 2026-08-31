@@ -7,3 +7,4 @@
 - Sincronización opcional entre mundo visual y sonido.
 - Axoflutter adapta su iluminación y movimiento al mundo activo.
 - Se mantienen sin cambios la lógica de constelaciones, sesiones, PWA, privacidad, memoria local, cifrado, exportación/importación, historia y GLB.
+- Despliegue Vercel conectado
