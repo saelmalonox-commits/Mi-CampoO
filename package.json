@@ -1,0 +1,19 @@
+{
+  "name": "mi-campo-master-aistudio",
+  "private": true,
+  "version": "1.5.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "check": "node --check client/app.js && node --check client/companion3d.js && node --check client/experience-master.js && node --check client/gemini-bridge.js && node --check client/exercise-engine.js && node --check client/constellation-factory.js && node --check server/index.js && node --check server/prompts.js && node --check server/utils.js"
+  },
+  "dependencies": {
+    "@google/genai": "^2.21.0",
+    "express": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "description": "Mi Campo MASTER AI Studio: constelaciones abiertas, Axoflutter, diseño inmersivo, tres universos x claro/oscuro, PWA, Gemini Live/TTS y generador dinámico."
+}
