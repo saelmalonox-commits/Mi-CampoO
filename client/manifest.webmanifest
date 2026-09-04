@@ -1,0 +1,33 @@
+{
+  "id": "/",
+  "name": "Mi Campo · Constelaciones guiadas",
+  "short_name": "Campo",
+  "description": "Constelaciones simbólicas guiadas con piezas físicas, Axoflutter, generador abierto y acompañamiento opcional con Gemini.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#02051A",
+  "theme_color": "#02051A",
+  "orientation": "portrait",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/icons/icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "version": "2026.09.4",
+  "visual_reference": "docs/references/HOME_VISUAL_TARGET.jpeg",
+  "home": {
+    "title": "CAMPO",
+    "subtitle": "EXPLORACIÓN SIMBÓLICA GUIADA",
+    "composition": [
+      "profile_action",
+      "notification_action",
+      "axoflutter_hero",
+      "history",
+      "continue",
+      "start",
+      "settings",
+      "library",
+      "modalities",
+      "living_guide",
+      "bottom_navigation"
+    ],
+    "radial": {
+      "center": "start",
+      "upper_left": "history",
+      "upper_right": "continue",
+      "lower_left": "settings",
+      "lower_right": "library",
+      "bottom": "modalities"
+    },
+    "bottom_navigation": [
+      "Inicio",
+      "Explorar",
+      "Prácticas",
+      "Diario",
+      "Respirar"
+    ],
+    "materials": [
+      "glass",
+      "gold filigree",
+      "cosmic water",
+      "luminous crystals",
+      "iridescent wings",
+      "neon particles"
+    ],
+    "rules": [
+      "do_not_replace_interactive_UI_with_a_flat_background_image",
+      "axoflutter_must_remain_visible_even_if_webgl_fails",
+      "same_destinations_across_worlds",
+      "active_session_reduces_visual_intensity"
+    ]
+  },
+  "worlds": {
+    "ocean": {
+      "dark": "Océano Abismal",
+      "light": "Mares Alba",
+      "navigation": "orbital aquatic glass",
+      "sound": "water"
+    },
+    "forest": {
+      "dark": "Bosque de Luciérnagas",
+      "light": "Bosque del Amanecer",
+      "navigation": "organic / living tree cues",
+      "sound": "forest"
+    },
+    "storm": {
+      "dark": "Tormenta Cósmica",
+      "light": "Aurora Radiante",
+      "navigation": "energy / multi-orbit cues",
+      "sound": "storm"
+    }
+  },
+  "color_tokens": {
+    "gold": "#FFD58D",
+    "cosmic_navy": "#02051A",
+    "indigo": "#161B58",
+    "cyan": "#61EFFF",
+    "magenta": "#FF77DC",
+    "violet": "#8A62FF",
+    "emerald": "#6EF0A5"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "actions": [
+    {
+      "name": "continue",
+      "args": {}
+    },
+    {
+      "name": "startExercise",
+      "args": {
+        "id": "exercise id from shared/exercises.json"
+      }
+    },
+    {
+      "name": "generateConstellation",
+      "args": {
+        "topic": "tema libre descrito por el practicante",
+        "type": "auto|family|individual|decision|relationship|project|energetic|free",
+        "intensity": "suave|normal|profunda"
+      }
+    },
+    {
+      "name": "pause",
+      "args": {}
+    },
+    {
+      "name": "repeat",
+      "args": {}
+    },
+    {
+      "name": "undo",
+      "args": {}
+    },
+    {
+      "name": "placed",
+      "args": {}
+    },
+    {
+      "name": "interpret",
+      "args": {}
+    },
+    {
+      "name": "go",
+      "args": {
+        "route": "home|history|library|settings|builder|genogram|lab"
+      }
+    },
+    {
+      "name": "world",
+      "args": {
+        "world": "ocean|forest|storm"
+      }
+    },
+    {
+      "name": "mode",
+      "args": {
+        "mode": "light|dark"
+      }
+    }
+  ]
+}

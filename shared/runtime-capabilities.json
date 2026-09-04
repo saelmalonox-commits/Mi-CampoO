@@ -1,0 +1,35 @@
+{
+  "version": "2026.09.4",
+  "core_offline": true,
+  "gemini_optional": true,
+  "providers": {
+    "local_engine": true,
+    "gemini_text": true,
+    "gemini_live": true,
+    "gemini_tts": true
+  },
+  "storage": [
+    "localStorage settings",
+    "IndexedDB photos",
+    "Web Crypto encrypted session bundle"
+  ],
+  "pwa": {
+    "manifest": true,
+    "service_worker": true,
+    "standalone": true,
+    "offline_shell": true
+  },
+  "voice": {
+    "local_speech_synthesis": true,
+    "gemini_live": true,
+    "gemini_tts": true
+  },
+  "dynamic_constellation": {
+    "closed_catalog": false,
+    "seed_practices": 12,
+    "custom_practices_unbounded_by_code": true,
+    "generated_plans": true,
+    "intuitive_figures": true,
+    "hypothesis_expansion": true
+  }
+}

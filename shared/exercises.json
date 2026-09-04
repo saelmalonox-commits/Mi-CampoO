@@ -1,0 +1,710 @@
+{
+  "version": "2026.09.2",
+  "principles": {
+    "session_cycle": [
+      "preparar",
+      "colocar",
+      "observar",
+      "responder",
+      "probar",
+      "comparar",
+      "cerrar",
+      "integrar"
+    ],
+    "defaults": {
+      "one_action_per_screen": true,
+      "user_may_pause_any_time": true,
+      "phrases_are_optional": true,
+      "movement_is_experiment": true,
+      "interpretation_is_hypothesis": true,
+      "physical_objects_first": true,
+      "intuition_has_priority": true,
+      "traditional_symbolic_associations_are_suggestions": true
+    }
+  },
+  "exercises": [
+    {
+      "id": "anchors-basic-field",
+      "title": "Campo con anclajes",
+      "category": "fundamentos",
+      "type": "free",
+      "solo": true,
+      "intensity": "suave",
+      "minutes": 10,
+      "description": "Exploración básica usando piezas o papeles como posiciones físicas para notar diferencias corporales y espaciales.",
+      "intention": "Quiero observar este tema desde varias posiciones y notar qué cambia en mi cuerpo, mi atención y mi siguiente paso.",
+      "representatives": [
+        "Yo",
+        "El tema",
+        "Lo que quiero",
+        "Obstáculo percibido",
+        "Recurso"
+      ],
+      "protocol": {
+        "openingHint": "Haz una breve llegada al cuerpo, mira el espacio y elige el tema sin intentar resolverlo todavía.",
+        "observationQuestions": [
+          {
+            "q": "¿Qué posición llama primero tu atención?",
+            "type": "piece"
+          },
+          {
+            "q": "¿Qué cambia en tu cuerpo al acercarte o alejarte de esa posición?",
+            "type": "text",
+            "ph": "Tensión, alivio, calor, distancia, curiosidad, nada en especial…"
+          },
+          {
+            "q": "¿Hacia dónde se orienta espontáneamente tu atención?",
+            "opts": [
+              "Hacia una pieza",
+              "Hacia fuera del campo",
+              "Hacia el centro",
+              "No lo sé"
+            ]
+          },
+          {
+            "q": "¿Qué pequeño movimiento te gustaría probar sin forzarlo?",
+            "opts": [
+              "Acercar",
+              "Alejar",
+              "Girar",
+              "Cambiar postura",
+              "Dejarlo igual"
+            ]
+          }
+        ],
+        "phraseCategory": "resources",
+        "closingPrompt": "Compara inicio y final. Conserva sólo lo que te resulte útil."
+      }
+    },
+    {
+      "id": "emotion-roles-witness",
+      "title": "Emoción, contraparte y testigo",
+      "category": "individual",
+      "type": "individual",
+      "solo": true,
+      "intensity": "normal",
+      "minutes": 15,
+      "description": "Da forma a una emoción, una parte contrapuesta y una posición testigo para observar el diálogo interno con más distancia.",
+      "intention": "Quiero conocer mejor esta emoción, lo que intenta hacer por mí y qué aparece cuando la observo desde una posición más amplia.",
+      "representatives": [
+        "Yo actual",
+        "La emoción",
+        "Su contraparte",
+        "Parte protectora",
+        "Testigo",
+        "Recurso"
+      ],
+      "protocol": {
+        "openingHint": "Elige una metáfora sencilla para tu mundo interno: equipo, orquesta, casa, tripulación u otra.",
+        "observationQuestions": [
+          {
+            "q": "¿Qué pieza expresa con más claridad la emoción ahora?",
+            "type": "piece"
+          },
+          {
+            "q": "Si esa emoción tuviera postura, tamaño o energía, ¿cómo sería?",
+            "type": "text",
+            "ph": "Describe postura, intensidad, velocidad o tamaño simbólico."
+          },
+          {
+            "q": "¿Qué podría estar intentando proteger o evitar esta parte?",
+            "type": "text",
+            "ph": "No hace falta acertar; formula una posibilidad."
+          },
+          {
+            "q": "Desde la posición Testigo, ¿qué relación ves entre las partes?",
+            "type": "text",
+            "ph": "¿Quién se acerca, evita, vigila, sostiene o necesita espacio?"
+          }
+        ],
+        "phraseCategory": "autonomy",
+        "closingPrompt": "Vuelve a la posición de Yo actual y elige una sola idea que quieras conservar."
+      }
+    },
+    {
+      "id": "family-place-map",
+      "title": "Mi lugar en el sistema",
+      "category": "familia",
+      "type": "family",
+      "solo": true,
+      "intensity": "normal",
+      "minutes": 12,
+      "description": "Observa tu lugar simbólico respecto de figuras familiares sin asumir que exista una única posición correcta.",
+      "intention": "Quiero observar cómo represento hoy mi lugar en mi familia y qué distancia o límite me resulta más coherente.",
+      "representatives": [
+        "Yo",
+        "Mamá",
+        "Papá",
+        "Hermanos/as",
+        "Mi vida actual",
+        "Recurso"
+      ],
+      "protocol": {
+        "observationQuestions": [
+          {
+            "q": "¿Dónde queda tu representación respecto del resto?",
+            "opts": [
+              "Cerca",
+              "Lejos",
+              "Entre varias figuras",
+              "En un extremo",
+              "No lo sé"
+            ]
+          },
+          {
+            "q": "¿Qué pieza parece ocupar demasiado espacio o muy poco dentro de tu escena?",
+            "type": "piece"
+          },
+          {
+            "q": "¿Qué notas al mirar hacia tu vida actual?",
+            "type": "text",
+            "ph": "Describe la reacción sin interpretarla todavía."
+          },
+          {
+            "q": "¿Qué ajuste de distancia te gustaría experimentar?",
+            "opts": [
+              "Más cercanía",
+              "Más distancia",
+              "Más espacio propio",
+              "Ninguno por ahora"
+            ]
+          }
+        ],
+        "phraseCategory": "belonging"
+      }
+    },
+    {
+      "id": "parent-relationship-layered",
+      "title": "Relación con madre o padre",
+      "category": "familia",
+      "type": "family",
+      "solo": true,
+      "intensity": "normal",
+      "minutes": 12,
+      "description": "Separa vínculo, necesidades, límites y recursos para que la exploración no dependa de una reconciliación forzada.",
+      "intention": "Quiero mirar esta relación como la vivo hoy, diferenciando lo recibido, lo que necesité y los límites que quiero cuidar.",
+      "representatives": [
+        "Yo",
+        "Madre o padre",
+        "Lo que recibí",
+        "Lo que necesité",
+        "Mi límite",
+        "Recurso"
+      ],
+      "protocol": {
+        "observationQuestions": [
+          {
+            "q": "¿Qué pieza atrae primero tu atención al mirar este vínculo?",
+            "type": "piece"
+          },
+          {
+            "q": "¿Qué diferencia notas entre 'lo que recibí' y 'lo que necesité'?",
+            "type": "text",
+            "ph": "Puedes notar distancia, tensión, cercanía o simplemente una diferencia visual."
+          },
+          {
+            "q": "¿Dónde necesita estar tu límite para que la escena resulte más clara?",
+            "opts": [
+              "Más cerca",
+              "Más lejos",
+              "Entre dos piezas",
+              "A un lado",
+              "No quiero moverlo"
+            ]
+          },
+          {
+            "q": "¿Qué recurso te ayudaría a volver al presente después de mirar esta relación?",
+            "type": "text",
+            "ph": "Algo concreto y actual."
+          }
+        ],
+        "phraseCategory": "parents"
+      }
+    },
+    {
+      "id": "relationship-boundaries",
+      "title": "Yo, la otra persona y el límite",
+      "category": "relaciones",
+      "type": "relationship",
+      "solo": true,
+      "intensity": "suave",
+      "minutes": 10,
+      "description": "Distingue lo propio, lo ajeno, el vínculo y el límite sin decidir culpables ni causas.",
+      "intention": "Quiero observar qué es mío, qué corresponde a la otra persona y qué límite necesito para relacionarme con más claridad.",
+      "representatives": [
+        "Yo",
+        "Otra persona",
+        "El vínculo",
+        "Lo mío",
+        "Lo suyo",
+        "Mi límite",
+        "Recurso"
+      ],
+      "protocol": {
+        "observationQuestions": [
+          {
+            "q": "¿Qué queda más mezclado en la escena: tú, la otra persona o el vínculo?",
+            "type": "piece"
+          },
+          {
+            "q": "¿Dónde colocarías 'Lo mío' para reconocerlo con claridad?",
+            "opts": [
+              "Cerca de mí",
+              "Entre ambos",
+              "Lejos",
+              "No lo sé"
+            ]
+          },
+          {
+            "q": "¿Qué cambia si 'Lo suyo' queda claramente separado de 'Lo mío'?",
+            "type": "text",
+            "ph": "Observa la escena y tu reacción."
+          },
+          {
+            "q": "¿Qué distancia del límite se siente más sostenible?",
+            "opts": [
+              "Más cerca",
+              "Más lejos",
+              "Como está",
+              "Quiero probar varias"
+            ]
+          }
+        ],
+        "phraseCategory": "boundaries"
+      }
+    },
+    {
+      "id": "past-relationship-closure",
+      "title": "Cerrar un vínculo pasado",
+      "category": "relaciones",
+      "type": "relationship",
+      "solo": true,
+      "intensity": "normal",
+      "minutes": 15,
+      "description": "Ordena simbólicamente lo recibido, lo entregado, lo pendiente y el futuro para cerrar un ciclo sin borrar lo vivido.",
+      "intention": "Quiero reconocer lo que esta relación significó, distinguir lo que queda pendiente y abrir espacio para mi presente.",
+      "representatives": [
+        "Yo",
+        "Vínculo pasado",
+        "Lo que recibí",
+        "Lo que entregué",
+        "Lo pendiente",
+        "Mi presente",
+        "Mi futuro"
+      ],
+      "protocol": {
+        "observationQuestions": [
+          {
+            "q": "¿Qué aspecto del vínculo pasado sigue ocupando más espacio?",
+            "type": "piece"
+          },
+          {
+            "q": "¿Qué diferencia ves entre lo recibido y lo entregado?",
+            "type": "text",
+            "ph": "No necesitas equilibrarlo; sólo observar."
+          },
+          {
+            "q": "¿Dónde queda 'Lo pendiente' respecto de tu presente?",
+            "opts": [
+              "Muy cerca",
+              "A distancia",
+              "Entre pasado y presente",
+              "No lo sé"
+            ]
+          },
+          {
+            "q": "¿Qué movimiento permitiría que el futuro tenga un poco más de espacio?",
+            "opts": [
+              "Acercar el futuro",
+              "Alejar el pasado",
+              "Mover lo pendiente",
+              "No mover nada"
+            ]
+          }
+        ],
+        "phraseCategory": "separation"
+      }
+    },
+    {
+      "id": "structural-goal-path",
+      "title": "Objetivo, obstáculo y tarea futura",
+      "category": "proyectos",
+      "type": "project",
+      "solo": true,
+      "intensity": "suave",
+      "minutes": 12,
+      "description": "Constelación estructural para diferenciar el problema, la solución imaginada, los obstáculos y el siguiente desafío.",
+      "intention": "Quiero mirar mi objetivo como un camino y distinguir el obstáculo actual de la tarea que vendrá después.",
+      "representatives": [
+        "Yo",
+        "Problema",
+        "Solución deseada",
+        "Obstáculo 1",
+        "Obstáculo 2",
+        "Tarea futura",
+        "Recurso",
+        "Primer paso"
+      ],
+      "protocol": {
+        "observationQuestions": [
+          {
+            "q": "¿Qué queda entre tú y la solución deseada?",
+            "type": "piece"
+          },
+          {
+            "q": "¿El obstáculo parece bloquear, proteger o señalar algo?",
+            "opts": [
+              "Bloquea",
+              "Protege",
+              "Señala algo",
+              "No lo sé"
+            ]
+          },
+          {
+            "q": "¿Dónde está la tarea futura respecto del primer paso?",
+            "type": "text",
+            "ph": "¿Está demasiado presente, lejos, detrás, mezclada con el problema…?"
+          },
+          {
+            "q": "¿Qué movimiento hace que el primer paso sea más visible?",
+            "opts": [
+              "Acercarlo",
+              "Separarlo del objetivo",
+              "Mover un obstáculo",
+              "Dejarlo igual"
+            ]
+          }
+        ],
+        "phraseCategory": "resources"
+      }
+    },
+    {
+      "id": "project-cycle-learning",
+      "title": "Cerrar un proyecto y recuperar aprendizajes",
+      "category": "proyectos",
+      "type": "project",
+      "solo": true,
+      "intensity": "suave",
+      "minutes": 10,
+      "description": "Representa un proyecto terminado o fallido, sus aprendizajes y el siguiente proyecto para separar identidad de resultado.",
+      "intention": "Quiero cerrar este capítulo, rescatar lo aprendido y liberar atención para lo que sigue.",
+      "representatives": [
+        "Yo",
+        "Proyecto anterior",
+        "Lo que dolió",
+        "Aprendizaje",
+        "Capacidad que conservo",
+        "Siguiente proyecto"
+      ],
+      "protocol": {
+        "observationQuestions": [
+          {
+            "q": "¿Qué parte del proyecto anterior todavía está más cerca de ti?",
+            "type": "piece"
+          },
+          {
+            "q": "¿Dónde queda el aprendizaje respecto de lo que dolió?",
+            "type": "text",
+            "ph": "Describe la relación espacial."
+          },
+          {
+            "q": "¿Qué capacidad quieres llevar contigo?",
+            "type": "piece"
+          },
+          {
+            "q": "¿Qué distancia necesita el siguiente proyecto para sentirse posible y no abrumador?",
+            "opts": [
+              "Más cerca",
+              "Más lejos",
+              "Como está",
+              "No lo sé"
+            ]
+          }
+        ],
+        "phraseCategory": "future"
+      }
+    },
+    {
+      "id": "money-relationship-symbolic",
+      "title": "Mi relación con los recursos y el dinero",
+      "category": "proyectos",
+      "type": "project",
+      "solo": true,
+      "intensity": "suave",
+      "minutes": 12,
+      "description": "Externaliza la relación subjetiva con dinero, seguridad, creencias y acciones concretas sin tratar la escena como predicción.",
+      "intention": "Quiero observar qué asocio con el dinero y los recursos, qué necesito para sentir seguridad y qué acción está bajo mi control.",
+      "representatives": [
+        "Yo",
+        "Dinero / recursos",
+        "Seguridad",
+        "Creencia familiar",
+        "Miedo",
+        "Capacidad",
+        "Acción concreta"
+      ],
+      "protocol": {
+        "observationQuestions": [
+          {
+            "q": "¿Cómo está orientada tu representación respecto de Dinero / recursos?",
+            "opts": [
+              "Hacia él",
+              "En sentido opuesto",
+              "De lado",
+              "No lo sé"
+            ]
+          },
+          {
+            "q": "¿Qué pieza está más cerca de Seguridad?",
+            "type": "piece"
+          },
+          {
+            "q": "Si la creencia familiar fuera sólo una historia heredada, ¿qué parte te sirve y cuál no?",
+            "type": "text",
+            "ph": "Escribe una observación breve."
+          },
+          {
+            "q": "¿Qué acción concreta puede quedar más cerca de ti hoy?",
+            "type": "piece"
+          }
+        ],
+        "phraseCategory": "resources"
+      }
+    },
+    {
+      "id": "adult-child-positions",
+      "title": "Adulto, parte vulnerable y cuidado",
+      "category": "individual",
+      "type": "individual",
+      "solo": true,
+      "intensity": "normal",
+      "minutes": 12,
+      "description": "Compara posiciones internas para notar cómo cambia tu postura y tu capacidad de decidir desde el presente.",
+      "intention": "Quiero diferenciar una parte vulnerable de mi posición adulta actual y encontrar una forma de cuidado que no me quite autonomía.",
+      "representatives": [
+        "Yo actual",
+        "Parte vulnerable",
+        "Parte crítica",
+        "Adulto responsable",
+        "Cuidado",
+        "Límite",
+        "Recurso"
+      ],
+      "protocol": {
+        "observationQuestions": [
+          {
+            "q": "¿Qué posición domina la escena ahora?",
+            "type": "piece"
+          },
+          {
+            "q": "¿Cómo cambia tu postura al imaginarte en Adulto responsable?",
+            "type": "text",
+            "ph": "Respiración, tono, estabilidad, tensión, mirada…"
+          },
+          {
+            "q": "¿Qué necesita la Parte vulnerable de la posición adulta?",
+            "type": "text",
+            "ph": "Una acción o cualidad concreta, no una explicación total."
+          },
+          {
+            "q": "¿Dónde colocarías Cuidado y Límite para que ambos estén presentes?",
+            "opts": [
+              "Juntos",
+              "Uno a cada lado",
+              "Más cerca de mí",
+              "No lo sé"
+            ]
+          }
+        ],
+        "phraseCategory": "autonomy"
+      }
+    },
+    {
+      "id": "rejected-part-integration",
+      "title": "La parte que rechazo",
+      "category": "individual",
+      "type": "individual",
+      "solo": true,
+      "intensity": "normal",
+      "minutes": 12,
+      "description": "Personifica una cualidad o emoción rechazada para explorar su función, necesidad y posible integración.",
+      "intention": "Quiero observar esta parte de mí sin confundirla con todo lo que soy y descubrir qué intenta proteger o aportar.",
+      "representatives": [
+        "Yo",
+        "Parte que rechazo",
+        "Lo que protege",
+        "Lo que necesita",
+        "Su recurso",
+        "Mi límite",
+        "Testigo"
+      ],
+      "protocol": {
+        "observationQuestions": [
+          {
+            "q": "¿Qué cualidad tiene la Parte que rechazo dentro de esta escena?",
+            "type": "text",
+            "ph": "Color, postura, energía, tamaño o palabra."
+          },
+          {
+            "q": "¿A qué parece prestar atención?",
+            "type": "piece"
+          },
+          {
+            "q": "¿Qué posibilidad aparece si la observas desde Testigo?",
+            "type": "text",
+            "ph": "Formula una hipótesis, no una conclusión."
+          },
+          {
+            "q": "¿Qué necesita cambiar para que tenga un lugar sin dirigir toda la escena?",
+            "opts": [
+              "Distancia",
+              "Orientación",
+              "Límite",
+              "Recurso",
+              "No lo sé"
+            ]
+          }
+        ],
+        "phraseCategory": "belonging"
+      }
+    },
+    {
+      "id": "decision-balcony",
+      "title": "Decisión con posición observadora",
+      "category": "decisiones",
+      "type": "decision",
+      "solo": true,
+      "intensity": "suave",
+      "minutes": 12,
+      "description": "Añade una posición observadora para comparar opciones sin pedir a las piezas que decidan por ti.",
+      "intention": "Quiero comparar estas opciones, reconocer miedo y deseo, y mirar la decisión desde una posición más amplia.",
+      "representatives": [
+        "Yo",
+        "Opción A",
+        "Opción B",
+        "Miedo",
+        "Deseo",
+        "Observador",
+        "Recurso",
+        "Siguiente paso"
+      ],
+      "protocol": {
+        "observationQuestions": [
+          {
+            "q": "¿Qué opción llama primero tu atención?",
+            "type": "piece"
+          },
+          {
+            "q": "¿Qué cambia al colocarte mentalmente en Observador?",
+            "type": "text",
+            "ph": "¿Ves más distancia, matices, un tercer camino, nada nuevo…?"
+          },
+          {
+            "q": "¿Cómo se relacionan Miedo y Deseo con cada opción?",
+            "type": "text",
+            "ph": "Describe sin convertirlo en predicción."
+          },
+          {
+            "q": "¿Qué siguiente paso sería útil incluso si aún no decides?",
+            "type": "text",
+            "ph": "Una acción pequeña, reversible y concreta."
+          }
+        ],
+        "phraseCategory": "decisions"
+      }
+    }
+  ],
+  "not_auto_guided": [
+    {
+      "kind": "high_intensity_group_or_clinical",
+      "reason": "Ejercicios diseñados para terapeutas, grupos, duelo o trauma intenso, enfermedad o confrontación física no se ejecutan automáticamente en modo solo. Pueden quedar como referencia teórica o requerir facilitación humana."
+    },
+    {
+      "kind": "causal_or_historical_claims",
+      "reason": "La app puede ofrecer asociaciones tradicionales como hipótesis simbólicas cuando el practicante las percibe o las solicita, pero nunca las convierte en pruebas de ancestros, muertos, secretos, enfermedad o hechos familiares."
+    },
+    {
+      "kind": "forced_reconciliation",
+      "reason": "Ningún ejercicio obliga a perdonar, abrazar, arrodillarse, acercarse o pronunciar una frase que no represente al usuario."
+    }
+  ],
+  "symbolicCuePolicy": {
+    "priority_order": [
+      "intuición del practicante",
+      "observación descriptiva",
+      "hipótesis simbólicas opcionales",
+      "experimento reversible",
+      "comparación antes/después"
+    ],
+    "interaction": [
+      "¿Qué te sugiere a ti primero?",
+      "Una posible lectura sería…",
+      "Otra posibilidad es…",
+      "¿Te resuena?"
+    ],
+    "actions": [
+      "Profundizar",
+      "Otra interpretación",
+      "Añadir figura intuitiva",
+      "Mover una pieza",
+      "Continuar observando",
+      "No me resuena"
+    ],
+    "cues": [
+      {
+        "cue": "mirada_al_suelo",
+        "suggestions": [
+          "persona fallecida o pérdida en una lectura sistémica tradicional",
+          "algo ausente o excluido simbólicamente",
+          "peso, retiro, descanso o algo que pide atención",
+          "simple orientación corporal sin significado adicional"
+        ]
+      },
+      {
+        "cue": "mirada_a_lo_lejos",
+        "suggestions": [
+          "ancestro o rama ancestral en una lectura sistémica tradicional",
+          "alguien ausente o distante",
+          "futuro, destino, algo mayor o una dirección aún no representada",
+          "simple necesidad de espacio o perspectiva"
+        ]
+      },
+      {
+        "cue": "pieza_acostada",
+        "suggestions": [
+          "descanso, vulnerabilidad o agotamiento",
+          "retirada o menor disponibilidad",
+          "muerte/pérdida como imagen simbólica si al practicante le resuena",
+          "postura elegida sin significado fijo"
+        ]
+      },
+      {
+        "cue": "pieza_entre_dos",
+        "suggestions": [
+          "puente o mediación",
+          "límite o separación",
+          "tercero que concentra atención",
+          "protección, lealtad o interposición simbólica"
+        ]
+      },
+      {
+        "cue": "pieza_periferica",
+        "suggestions": [
+          "distancia o autonomía",
+          "algo menos integrado o poco visible",
+          "exclusión simbólica como una posibilidad, no un hecho",
+          "necesidad de lugar propio"
+        ]
+      },
+      {
+        "cue": "espalda_o_no_mirada",
+        "suggestions": [
+          "protección o límite",
+          "algo que no se quiere o no se puede mirar todavía",
+          "autonomía o dirección hacia otra cosa",
+          "distancia relacional sin explicación causal"
+        ]
+      }
+    ]
+  }
+}
